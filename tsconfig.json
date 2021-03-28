@@ -1,26 +1,53 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
+    "isolatedModules": true,
+    "allowJs": true,
+    "types": [
+      "react",
+      "node"
+    ],
+    "allowSyntheticDefaultImports": true,
+    "target": "es6",
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "rootDir": "./src",
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
     "noEmit": true,
-    "jsx": "react"
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "dom",
+      "es2015",
+      "es2017",
+      "es6",
+      "dom.iterable",
+      "esnext"
+    ]
   },
   "include": [
-    "src"
+    "src/**/*",
+    ".eslintrc.js",
+    "server.js"
+  ],
+  "exclude": [
+    "node_modules",
+    "test",
+    "dist",
+    "dist/**/*spec.ts"
   ]
 }

@@ -1,0 +1,30 @@
+@import '~antd/dist/antd.less';
+@body-background: #090221;
+@primary-color: #d80000;
+@error-color: #f44336;
+@secondary-color: #1da57a;
+@layout-body-background: @body-background;
+
+@layout-header-background: @body-background;
+@layout-header-height: 72px;
+@component-background: #0f0629;
+@border-radius-base: 32px;
+@card-skeleton-bg: @component-background;
+@success-color: #1da57a;
+@layout-sider-background: @component-background;
+@menu-dark-bg: @component-background;
+::-webkit-scrollbar {
+    display: none;
+}
+.ant-layout-sider {
+    height: 100vh !important;
+    flex: 0 0 25% !important;
+    max-width: 25% !important;
+}
+.ant-card-bordered {
+    border: 1px solid #0f0629;
+}
+.ant-card {
+    margin: 0.5rem !important;
+    border: none !important;
+}
