@@ -3,26 +3,48 @@ import { UserOutlined, VideoCameraOutlined, UploadOutlined } from '@ant-design/i
 import Avatar from 'antd/lib/avatar/avatar';
 const { Header, Sider, Content } = Layout;
 import './App.less';
+import './index.css';
+// @ts-ignore
+import styled from 'styled-components';
 function App() {
     return (
-        <Layout>
-            <Sider trigger={null} collapsible>
-                <div
+<Layout 
+        className="Layout"
+        style={{
+           
+
+        }}
+        
+        
+        
+        >
+            <Sider 
+            
+                
+            
+            
+            trigger={null} collapsible>
+                <div 
                     className="logo"
                     style={{
-                        textAlign: 'center',
-                        font: 'normal normal medium 42px/55px IBM Plex Sans',
-                        letterSpacing: '0px',
-                        color: '#FFFFFF',
-                        textTransform: 'capitalize',
-                        opacity: '0.88',
-                    }}
+ }}
                 >
-                    <Row justify="center">
-                        <Col>
-                            <Typography.Title level={3} style={{ color: '#FFFFFF', opacity: '0.88' }}>
-                                Toulisso
-                            </Typography.Title>
+                    <Row >
+                        <Col style={{        }}>
+
+                            <Typography.Title level={3} 
+                            style={{
+                            
+                                marginTop:'46px',
+                                font: 'IBM Plex Sans',  
+                                position: 'fixed',
+                                opacity: 0.88, 
+                                color:' #FFFFFF',
+                             
+                                }}
+                                 >Toulisso
+                                
+                                </Typography.Title>
                         </Col>
                     </Row>
                 </div>
@@ -30,45 +52,69 @@ function App() {
                     theme="dark"
                     mode="inline"
                     style={{
-                        background: '#0F0629',
-                        marginTop: '50%',
+                        
+                        textAlign:'center',
+                        color: '#FFFFFF',
+                        marginTop:'132px',
+                        marginRight:'169px',
+
+                        
+                        
                     }}
                 >
                     <Menu.Item
                         style={{
-                            textAlign: 'center',
+                            letterSpacing: '0px', 
+                            opacity: '0.88',
+                            font:'normal 600 20px/25px IBM Plex Sans',
+                            
+
                         }}
                         key="1"
                         icon={<UserOutlined />}
-                    >
-                        Navigation 1
+                        
+                            
+                        
+
+                    >Navigation 1
+                        
                     </Menu.Item>
                     <Menu.Item
                         style={{
-                            textAlign: 'center',
+                           
+                            letterSpacing: '0px',
+                            opacity: 1,
+                            font: 'normal 600 20px/25px IBM Plex Sans',
+                        
                         }}
                         key="2"
                         icon={<VideoCameraOutlined />}
                     >
-                        Navigation 1
+                        Navigation 2
                     </Menu.Item>
                     <Menu.Item
                         style={{
-                            textAlign: 'center',
+                            
+                            letterSpacing: '0px',
+                            opacity: 1,
+                            font: 'normal 600 20px/25px IBM Plex Sans',
                         }}
                         key="3"
                         icon={<UploadOutlined />}
                     >
-                        Navigation 1
+                        Navigation 3
                     </Menu.Item>
                     <Menu.Item
                         style={{
-                            textAlign: 'center',
+                            letterSpacing: '0px',
+                            opacity: 1,
+                            font: 'normal 600 20px/25px IBM Plex Sans',
+                            
                         }}
                         key="3"
                         icon={<UploadOutlined />}
                     >
-                        Navigation 1
+                        Navigation 4
                     </Menu.Item>
                 </Menu>
             </Sider>
@@ -78,12 +124,14 @@ function App() {
                     height: '100vh',
                     overflow: 'scroll',
                     width: '50%',
+                    
                 }}
             >
                 <Header
                     style={{
                         paddingLeft: '1rem',
                         paddingRight: '1rem',
+                        
                     }}
                 >
                     <Row justify="end" gutter={[16, 16]}>
@@ -97,24 +145,65 @@ function App() {
                         </Col>
                     </Row>
                 </Header>
-                <Content>
-                    <Row justify="center">
-                        <Col>
+                <Content style={{
+                    
+                }}>
+                    <Row justify="center"
+                    style={{        }}>
+                        
+                        
+                        
+                        
+                        <Col style={{           }}>
+                        
+    
                             <Typography.Title level={1} style={{ color: '#FFFFFF', opacity: '0.88' }}>
                                 Welcome Back Mohamed Ali
                             </Typography.Title>
                         </Col>
                     </Row>
-                    <Card>
+                    <Card 
+                    style={{
+                        height:'560px',
+                        border: '4px solid" "#1A1724',
+                        borderRadius: '12px',
+                    }}
+                    
+                    
+                    >
+                        <Skeleton avatar paragraph={{ rows: 4 }} 
+                        
+                        />
+                    </Card>
+                    <Card
+                    style={{
+                        height:'560px',
+                        
+                    }}
+                    
+                    
+                    >
                         <Skeleton avatar paragraph={{ rows: 4 }} />
                     </Card>
-                    <Card>
+                    <Card
+                    style={{
+                        height:'560px',
+                        
+                    }}
+                    
+                    
+                    >
                         <Skeleton avatar paragraph={{ rows: 4 }} />
                     </Card>
-                    <Card>
-                        <Skeleton avatar paragraph={{ rows: 4 }} />
-                    </Card>
-                    <Card>
+                    <Card
+                    
+                    style={{
+                        height:'560px',
+                        
+                    }}
+                    
+                    
+                    >
                         <Skeleton avatar paragraph={{ rows: 4 }} />
                     </Card>
                 </Content>
