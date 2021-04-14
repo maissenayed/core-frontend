@@ -1,53 +1,33 @@
-import { Card, Col, Layout, Menu, Row, Skeleton, Typography } from 'antd';
-import { UserOutlined, VideoCameraOutlined, UploadOutlined } from '@ant-design/icons';
-import Avatar from 'antd/lib/avatar/avatar';
-const { Header, Sider, Content } = Layout;
 import './App.less';
-import './index.css';
-// @ts-ignore
+
+import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
+import { Card, Col, Layout, Menu, Row, Skeleton, Typography } from 'antd';
+import Avatar from 'antd/lib/avatar/avatar';
 import styled from 'styled-components';
+
+const { Header, Sider, Content } = Layout;
+const LogoWrapper = styled.div`
+    text-align: 'center';
+    font: 'normal normal medium 42px/55px IBM Plex Sans';
+    letter-spacing: '0px';
+    color: '#FFFFFF';
+    text-transform: 'capitalize';
+    opacity: '0.88';
+`;
+
 function App() {
     return (
-<Layout 
-        className="Layout"
-        style={{
-           
-
-        }}
-        
-        
-        
-        >
-            <Sider 
-            
-                
-            
-            
-            trigger={null} collapsible>
-                <div 
-                    className="logo"
-                    style={{
- }}
-                >
-                    <Row >
-                        <Col style={{        }}>
-
-                            <Typography.Title level={3} 
-                            style={{
-                            
-                                marginTop:'46px',
-                                font: 'IBM Plex Sans',  
-                                position: 'fixed',
-                                opacity: 0.88, 
-                                color:' #FFFFFF',
-                             
-                                }}
-                                 >Toulisso
-                                
-                                </Typography.Title>
+        <Layout>
+            <Sider trigger={null} collapsible>
+                <LogoWrapper>
+                    <Row justify="center">
+                        <Col>
+                            <Typography.Title level={3} style={{ color: '#FFFFFF', opacity: '0.88' }}>
+                                Toulisso
+                            </Typography.Title>
                         </Col>
                     </Row>
-                </div>
+                </LogoWrapper>
                 <Menu
                     theme="dark"
                     mode="inline"
@@ -162,18 +142,21 @@ function App() {
                             </Typography.Title>
                         </Col>
                     </Row>
-                    <Card 
-                    style={{
-                        height:'560px',
-                        border: '4px solid" "#1A1724',
-                        borderRadius: '12px',
-                    }}
-                    
-                    
-                    >
-                        <Skeleton avatar paragraph={{ rows: 4 }} 
-                        
-                        />
+                    <Card>
+                        <Row align="middle" gutter={[16, 16]}>
+                            <Col>
+                                <Skeleton.Avatar active={true} size={'large'} shape={'circle'} />
+                            </Col>
+                            <Col>
+                                <Row gutter={[0, 8]} style={{ marginBottom: '4px' }}>
+                                    <Skeleton.Button size="small" />
+                                </Row>
+                                <Row>
+                                    <Skeleton.Button size="small" />
+                                </Row>
+                            </Col>
+                        </Row>
+                        <Skeleton />
                     </Card>
                     <Card
                     style={{
