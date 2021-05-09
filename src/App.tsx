@@ -41,7 +41,9 @@ function App() {
                 <MenuWarrper theme="dark" mode="inline">
                     <Menu.Item
                         style={{
-                            textAlign: 'center',
+                            letterSpacing: '0px',
+                            opacity: '0.88',
+                            font: 'normal 600 20px/25px IBM Plex Sans',
                         }}
                         key="1"
                         icon={<UserOutlined />}
@@ -50,30 +52,36 @@ function App() {
                     </Menu.Item>
                     <Menu.Item
                         style={{
-                            textAlign: 'center',
+                            letterSpacing: '0px',
+                            opacity: 1,
+                            font: 'normal 600 20px/25px IBM Plex Sans',
                         }}
                         key="2"
                         icon={<VideoCameraOutlined />}
                     >
-                        Navigation 1
+                        Navigation 2
                     </Menu.Item>
                     <Menu.Item
                         style={{
-                            textAlign: 'center',
+                            letterSpacing: '0px',
+                            opacity: 1,
+                            font: 'normal 600 20px/25px IBM Plex Sans',
                         }}
                         key="3"
                         icon={<UploadOutlined />}
                     >
-                        Navigation 1
+                        Navigation 3
                     </Menu.Item>
                     <Menu.Item
                         style={{
-                            textAlign: 'center',
+                            letterSpacing: '0px',
+                            opacity: 1,
+                            font: 'normal 600 20px/25px IBM Plex Sans',
                         }}
                         key="4"
                         icon={<UploadOutlined />}
                     >
-                        Navigation 1
+                        Navigation 4
                     </Menu.Item>
                 </MenuWarrper>
             </Sider>
@@ -95,9 +103,9 @@ function App() {
                         </Col>
                     </Row>
                 </Header>
-                <Content>
-                    <Row justify="center">
-                        <Col>
+                <Content style={{}}>
+                    <Row justify="center" style={{}}>
+                        <Col style={{}}>
                             <Typography.Title level={1} style={{ color: '#FFFFFF', opacity: '0.88' }}>
                                 Welcome Back Mohamed Ali
                             </Typography.Title>
@@ -119,13 +127,25 @@ function App() {
                         </Row>
                         <Skeleton />
                     </Card>
-                    <Card>
+                    <Card
+                        style={{
+                            height: '560px',
+                        }}
+                    >
                         <Skeleton avatar paragraph={{ rows: 4 }} />
                     </Card>
-                    <Card>
+                    <Card
+                        style={{
+                            height: '560px',
+                        }}
+                    >
                         <Skeleton avatar paragraph={{ rows: 4 }} />
                     </Card>
-                    <Card>
+                    <Card
+                        style={{
+                            height: '560px',
+                        }}
+                    >
                         <Skeleton avatar paragraph={{ rows: 4 }} />
                     </Card>
                 </Content>
