@@ -7,14 +7,26 @@ import styled from 'styled-components';
 
 const { Header, Sider, Content } = Layout;
 const LogoWrapper = styled.div`
-    text-align: 'center';
-    font: 'normal normal medium 42px/55px IBM Plex Sans';
-    letter-spacing: '0px';
-    color: '#FFFFFF';
-    text-transform: 'capitalize';
-    opacity: '0.88';
+    text-align: center;
+    font: normal normal medium 42px/55px IBM Plex Sans;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-transform: capitalize;
+    opacity: 0.88;
+`;
+const LayoutWarrper = styled(Layout)`
+    height: 100vh;
+    overflow: scroll;
+    width: 50%;
 `;
 
+const MenuWarrper = styled(Menu)`
+    margin-top: 50%;
+`;
+const TitleWarrper = styled(Typography.Title)`
+    opacity: 0.88;
+    color: #ffffff !important;
+`;
 function App() {
     return (
         <Layout>
@@ -22,20 +34,11 @@ function App() {
                 <LogoWrapper>
                     <Row justify="center">
                         <Col>
-                            <Typography.Title level={3} style={{ color: '#FFFFFF', opacity: '0.88' }}>
-                                Toulisso
-                            </Typography.Title>
+                            <TitleWarrper level={3}>Toulisso</TitleWarrper>
                         </Col>
                     </Row>
                 </LogoWrapper>
-                <Menu
-                    theme="dark"
-                    mode="inline"
-                    style={{
-                        background: '#0F0629',
-                        marginTop: '50%',
-                    }}
-                >
+                <MenuWarrper theme="dark" mode="inline">
                     <Menu.Item
                         style={{
                             textAlign: 'center',
@@ -67,21 +70,14 @@ function App() {
                         style={{
                             textAlign: 'center',
                         }}
-                        key="3"
+                        key="4"
                         icon={<UploadOutlined />}
                     >
                         Navigation 1
                     </Menu.Item>
-                </Menu>
+                </MenuWarrper>
             </Sider>
-            <Layout
-                className="site-layout"
-                style={{
-                    height: '100vh',
-                    overflow: 'scroll',
-                    width: '50%',
-                }}
-            >
+            <Layout className="site-layout" style={{}}>
                 <Header
                     style={{
                         paddingLeft: '1rem',

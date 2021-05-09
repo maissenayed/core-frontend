@@ -1,53 +1,32 @@
 {
-  "compilerOptions": {
-    "forceConsistentCasingInFileNames": true,
-    "noFallthroughCasesInSwitch": true,
-    "isolatedModules": true,
-    "allowJs": true,
-    "types": [
-      "react",
-      "node"
-    ],
-    "allowSyntheticDefaultImports": true,
-    "target": "es6",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "strict": true,
-    "jsx": "react-jsx",
-    "rootDir": "./src",
-    "experimentalDecorators": true,
-    "noImplicitAny": false,
-    "noEmit": true,
-    "strictNullChecks": false,
-    "skipLibCheck": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "importHelpers": true,
-    "esModuleInterop": true,
-    "emitDecoratorMetadata": true,
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "dom",
-      "es2015",
-      "es2017",
-      "es6",
-      "dom.iterable",
-      "esnext"
-    ]
-  },
-  "include": [
-    "src/**/*",
-    ".eslintrc.js",
-    "server.js"
-  ],
-  "exclude": [
-    "node_modules",
-    "test",
-    "dist",
-    "dist/**/*spec.ts"
-  ]
+    "compilerOptions": {
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "isolatedModules": true,
+        "allowJs": true,
+        "types": ["react", "node"],
+        "allowSyntheticDefaultImports": true,
+        "target": "es6",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "strict": true,
+        "jsx": "react-jsx",
+        "rootDir": "./src",
+        "experimentalDecorators": true,
+        "noImplicitAny": false,
+        "noEmit": true,
+        "strictNullChecks": false,
+        "skipLibCheck": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "importHelpers": true,
+        "esModuleInterop": true,
+        "emitDecoratorMetadata": true,
+        "typeRoots": ["node_modules/@types"],
+        "lib": ["dom", "es2015", "es2017", "es6", "dom.iterable", "esnext"]
+    },
+    "include": ["src/**/*", ".eslintrc.js", "server.js"],
+    "exclude": ["node_modules", "test", "dist", "dist/**/*spec.ts"]
 }
